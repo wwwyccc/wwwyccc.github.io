@@ -1,0 +1,38 @@
+---
+layout: page
+---
+{{ content }}
+<h2 id="Recent">
+  Recent
+</h2>
+<ul>
+  {% for post in site.posts limit:5 %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>, {{ post.date | date_to_string }}
+  </li>
+  {% endfor %}
+  <li>
+    <a href="/archive">
+      All {{ site.posts.size }} posts...
+    </a>
+  </li>
+</ul>
+<h2 id="Essay">Essay</h2>
+{% for tag in site.index.showtag %}
+<h3 id="{{ tag }}">
+  {{ tag }}
+</h3>
+<ul>
+  {% for post in site.tags[tag] %}
+  <li>
+    <a href="{{ post.url }}">
+      {{ post.title }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+{% endfor %}
+{% for node in site.index.script %}
+<script {% for var in node.var %} {{ var.key }}='{{ var.value }}' {% endfor %}>
+</script>
+{% endfor %}
