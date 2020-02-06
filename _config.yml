@@ -169,7 +169,7 @@ page:
       second: 秒
     copyright:
       enable: true
-      text: '<a class="github-button" aria-label="Star wu-kan/wu-kan.github.io on GitHub" href="https://github.com/wu-kan/wu-kan.github.io" data-icon="octicon-star" data-show-count="true">Star</a>'
+      text: '<a class="github-button" aria-label="Star wwwyccc/wwwyccc.github.io on GitHub" href="https://github.com/wwwyccc/wwwyccc.github.io" data-icon="octicon-star" data-show-count="true">Star</a>'
   head: # 删改前确定知道自己在做什么
     - tag: meta # Enable responsiveness on mobile devices
       var:
