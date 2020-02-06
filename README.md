@@ -1,8 +1,4 @@
----
-layout: page
-title: 关于
-permalink: /about
----
+
 
 Tafft的随笔小屋
 
